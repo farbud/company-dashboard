@@ -45,8 +45,9 @@ export default function Transactions({ setTransactions }: Props) {
 
   useEffect(() => {
     const initialData = generateInitialData();
-
+    setTransactionsLocal(initialData);
     setTransactions?.(initialData);
+    setLoading(false);
 
     const interval = setInterval(() => {
       setTransactionsLocal((prev) => {

@@ -49,7 +49,7 @@ export default function DashboardPage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
               {/* Chart وسط */}
               <div className="col-span-2 bg-white dark:bg-gray-700 p-4 rounded shadow">
-                <Chart transactions={transactions} />
+                <Chart transactions={transactions} users={users} />
               </div>
 
               {/* سمت چپ */}
